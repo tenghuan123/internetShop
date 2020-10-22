@@ -1,0 +1,43 @@
+.loginContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(45deg,#3859E5,#22258A);
+
+    .formContainer{
+        background: #2B3BB1;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+
+        h3{
+            text-align: center;
+            color: #f8f8f8;
+            margin-bottom: 2rem;
+        }
+        .ant-input-affix-wrapper.ant-input-password,.ant-input{
+            background-color: #2B3BB1;
+        }
+        .ant-input-affix-wrapper{
+            border: 1px solid #6872BC;
+            .ant-input{
+                border: none;
+            }
+        }
+        .ant-input{
+            border: 1px solid #6872BC;    
+        }
+        .ant-form-item-required{
+            color: #f8f8f8;
+        }
+        .ant-checkbox-wrapper span{
+            color: #f8f8f8;
+        }
+    }
+    .loginTextContainer{
+        .loginText {
+            color: #f8f8f8;
+        }
+    }
+}
