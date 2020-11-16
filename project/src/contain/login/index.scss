@@ -11,6 +11,9 @@
         border-radius: 10px;
         box-shadow: 0px 0px 10px;
 
+        .ant-tabs-top > .ant-tabs-nav::before{
+            border-bottom: none;
+        }
         h3{
             text-align: center;
             color: #f8f8f8;
@@ -38,6 +41,54 @@
     .loginTextContainer{
         .loginText {
             color: #f8f8f8;
+        }
+    }
+    .ant-form-item-control-input-content{
+        display: inline-flex;
+    }
+    .inputBox {
+        display: flex;
+
+        .veriCodebox{
+            height: 100%;
+            display: inherit;
+        }
+    }
+    .ant-input-affix-wrapper{
+        background: rgba(0,0,0,0);
+    }
+    .ant-btn{
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .loginContainer{
+        display: flex;
+        flex-direction: column;
+        background: rgb(114,104,217);
+        justify-content: flex-end;
+
+        .loginTextContainer{
+            display: none;
+        }
+        .formContainer{
+            background: #fff;
+            box-shadow: none;
+            width: 100%;
+            border-radius: 0px;
+            padding: 0 2rem;
+            height: 90%;
+
+            .ant-form-item-required{
+                color: #000;
+            }
+            .ant-input,.ant-input-affix-wrapper.ant-input-password{
+                background: #fff;
+            }
+            .ant-tabs-tab{
+                margin: 0 52px;
+            }
         }
     }
 }

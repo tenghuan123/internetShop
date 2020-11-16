@@ -1,19 +1,13 @@
 import axios from 'axios';
 import baseConfig from './config'
 
-class loginContainer{
-    constructor(props = ''){
-        this.props = props || [];
-    }
 
-    baseServer(parmes){
-        this.parmes = parmes;
-        
-        return this;
-    }
-    
-    loginInto(){
-        axios.post(baseConfig);
+const loginContainer = {
+    loginInto:function(data, parmes){
+        axios.post(`${baseConfig.url}/login`,{...data,parmes}).then(value => console.log(value));
+    },
+    regsterInto(data, parmes){
+        axios.post(`${baseConfig.url}/regster`,{...data,parmes}).then(value => console.log(value));
     }
 }
 export default loginContainer;

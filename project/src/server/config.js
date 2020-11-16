@@ -1,4 +1,4 @@
 const baseConfig = {
-    url:'',
+    url:'http://localhost:3001',
 }
 export default baseConfig;
